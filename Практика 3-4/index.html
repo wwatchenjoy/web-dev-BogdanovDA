@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js.js">
+
+    <title>Wwatchenjoy</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="https://github.com/wwatchenjoy">wwatchenjoy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="auto.html">Вход</a>
+              </li>
+
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Важное
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://github.com/wwatchenjoy/web-dev-BogdanovDA">Проекты</a></li>
+                  <li><a class="dropdown-item" href="http://www.fa.ru/Pages/Home.aspx">Университет</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://vk.com/hitriy_dmitriy">VK</a></li>
+                  <li><a class="dropdown-item" href="task33.html">Опрос</a></li>
+                  <li><a class="dropdown-item" href="plan.html">ToDo</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+
+            <form>
+              <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Search" autofocus> 
+              <input class="button_for_turn_back" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Отменить поиск">
+              <input class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск">
+            </form>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Поиск на странице" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+           -->
+            
+          </div>
+        </div>
+      </nav>
+
+      <main>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://wallpaperaccess.com/full/2684931.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpaperaccess.com/full/2684831.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallup.net/wp-content/uploads/2017/10/25/481387-anime-waterfall.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpaperaccess.com/full/2684921.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://wallpaperaccess.com/full/2684980.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </main>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-7 col-sm-12" >
+          <img class="w-100" src="https://icocnews.ru/wp-content/uploads/2015/09/priroda.jpg" alt="">
+        </div>
+        <div class="col-md-5 col-sm-12 text-center">
+          <h3>О нас</h3>
+          <p>Тестовая верстка первого сайта!</p>
+        </div>
+      </div>
+
+      <!-- <h2 class="text-center my-5">Наши сотрудники</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 text-center">
+          <h4>Вася Пупкин</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
+          </svg>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ipsa? Quos odit qui magnam doloribus.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <h4>Вася Пупкин</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-emoji-laughing" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5zM7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
+          </svg>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ipsa? Quos odit qui magnam doloribus.</p>
+        </div> -->
+
+
+        <style>
+          .card{
+              box-shadow: 5px 5px 15px rgb(117, 115, 211) ;
+              transition: all 0.3s ease-in;
+              -webkit-transition: all 0.3s ease-in;
+              -moz-transition: all 0.3s ease-in;
+          }
+  
+          .card:hover{
+              background-color: rgb(216, 83, 50);
+              color: mintcream;
+              box-shadow:5px 5px 10px slategrey;
+          }
+      </style>
+      <div class="container-fluid" style="margin-top: 50px;"> 
+          <h1 align="center">Наша команда</h1>
+          <div class="row main justify-content-center" style="margin-top: 30px;">
+              <div class="col-lg-3 col-md-6 my-3">
+                  <div class="card">
+                      <div class="card-body">
+                          <img src="https://vse-frazi.ru/wp-content/uploads/2017/03/%D0%BB%D1%8F%D0%B3%D1%83%D1%88%D0%BA%D0%B0-%D0%BC%D0%B5%D0%BC-10.gif" alt="" style="width: 120px; height: 120px; border-radius: 50%;">
+                          <h3>Nikita Mozharovskii</h3>
+                          <h5>Проджект</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Nam architecto molestias praesentium itaque? Amet aliquid, necessitatibus officiis assumenda nobis, 
+                              ullam reiciendis aliquam perspiciatis facilis illum consequuntur numquam voluptate in dolores?
+                          </p>
+                      </div>
+                  </div>
+              </div>
+  
+  
+              <div class="col-lg-3 col-md-6 my-3">
+                  <div class="card">
+                      <div class="card-body">
+                          <img src="https://cs11.pikabu.ru/post_img/2019/10/16/10/1571246121185355429.jpg" alt="" style="width: 120px; height: 120px; border-radius: 50%;">
+                          <h3>Dmitry Bogdanov</h3>
+                          <h5>Back-end</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Nam architecto molestias praesentium itaque? Amet aliquid, necessitatibus officiis assumenda nobis, 
+                              ullam reiciendis aliquam perspiciatis facilis illum consequuntur numquam voluptate in dolores?
+                          </p>
+                      </div>
+                  </div>
+              </div>
+  
+  
+              <div class="col-lg-3 col-md-6 my-3">
+                  <div class="card">
+                      <div class="card-body">
+                          <img src="https://mr-mem.ru/images/memes/dog-love-like-this.png" alt="" style="width: 120px; height: 120px; border-radius: 50%;">
+                          <h3>Dmitry Kirillov</h3>
+                          <h5>Front-end</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Nam architecto molestias praesentium itaque? Amet aliquid, necessitatibus officiis assumenda nobis, 
+                              ullam reiciendis aliquam perspiciatis facilis illum consequuntur numquam voluptate in dolores?
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        
+
+
+      </div>
+    </div>
+
+
+       <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
+</body>
+</html>
