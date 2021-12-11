@@ -5,6 +5,7 @@ let box = document.getElementsByClassName('box');
 let result = document.getElementById('result');
 let restart = document.getElementById('restart');
 
+
 let winningArray = [
     [0, 1, 2],
     [3, 4, 5],
@@ -32,8 +33,6 @@ gamePlace.onclick = e => {
     }
 };
 
-
-//Проверка игровых клеток и сравнение их с winningArray
 checkWinner = () => {
     for (let i = 0; i < winningArray.length; i++) {
     if (box[winningArray[i][0]].innerHTML === 'X' && box[winningArray[i][1]].innerHTML === 'X' && box[winningArray[i][2]].innerHTML === 'X' ) {
@@ -52,7 +51,7 @@ checkWinner = () => {
 }
 };
 
-
+// UI
 gameDisabled = () => {
     for (let i = 1; i < 10; i++) {
         document.getElementById('box-'+i).className = 'box clicked';
